@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrierung abgeschlossen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Vielen Dank für Ihre Anmeldung!</h1>
+    <p>Ihre Registrierung war erfolgreich.</p>
+    <p>Eine Bestätigungs-E-Mail wurde an <strong id="user-email"></strong> gesendet.</p>
+    <p><a href="index.html">Zurück zum Onlineshop</a></p>
+  </div>
+
+  <script>
+
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('email');
+    if (email) {
+      document.getElementById('user-email').textContent = email;
+    }
+  </script>
+</body>
+</html>

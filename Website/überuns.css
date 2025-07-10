@@ -1,0 +1,249 @@
+  body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+
+    .textgeschichte-mode {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1em;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .textgeschichte-mode h1,
+    .textgeschichte-mode h2 {
+      text-align: center;
+      margin-top: 0.5em;
+    }
+
+    .textgeschichte-mode figure {
+      margin: 1.5em 0;
+      text-align: center;
+    }
+
+    .textgeschichte-mode img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .textgeschichte-mode figcaption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 0.5em;
+    }
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #fffffd;
+  color: #333;
+}
+ 
+header {
+  color: #000000;
+  padding: 1rem;
+  text-align: center;
+}
+ 
+.kategoriekleid {
+     font-family:   New Century Schoolbook, TeX Gyre Schola;
+     display: flex;
+     align-items: flex-end;       
+     justify-content: center;      
+}
+ 
+.html {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start;   
+  height: 100px;
+  font-family: Arial, sans-serif;
+  font-size: 50%;
+  padding: 10px;
+}
+ 
+:root {
+      --bg: #fff;
+      --text: #000;
+      --muted: #555;
+      --border: #eee;
+      --accent: #e60023;
+      --gap: 16px;
+    }
+ 
+    * {
+      box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg); color: var(--text); }
+ 
+    
+   .info-bar {
+  background: #C6FFF5;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+ 
+   
+    
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--gap);
+      border-bottom: 1px solid var(--border);
+    }
+ 
+    .logo {
+       font-size: 1.5rem;
+       font-weight: 500;
+       font-family:   New Century Schoolbook, TeX Gyre Schola;
+      }
+ 
+    nav.main-nav {
+      display: flex;
+      gap: var(--gap);
+      font-size: 0.9rem;
+    }
+ 
+    nav.main-nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+ 
+    .icons {
+      display: flex;
+      gap: var(--gap);
+      font-size: 1.1rem;
+      align-items: center;
+    }
+ 
+    .icons span {
+      cursor: pointer;
+    }
+ 
+    
+    .page-header {
+      padding: var(--gap);
+      border-bottom: 1px solid var(--border);
+    }
+ 
+    .page-header h1 {
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+ 
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+ 
+    
+ 
+    main {
+      display: flex;
+      padding: var(--gap);
+      gap: var(--gap);
+    }
+ 
+    
+    .sidebar {
+      width: 550px;
+    }
+ 
+    .sidebar h2 {
+      font-size: 1rem;
+      margin-bottom: var(--gap);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+    }
+ 
+    
+    .content {
+      flex: 1;
+    }
+
+  figure.altertextbild {
+  text-align: center;      
+  max-width: 90%;           
+}
+
+figure.altertextbild img {
+  display: block;
+  margin: 0 auto;          
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 2em auto;      
+  text-align: center;   
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;        
+  max-width: 100%;
+  height: auto;
+}
+
+figure img[alt="Nachkriegs-Modekollektiv der Marke Tonak"] {
+  display: block;    
+  margin: 1em auto;    
+  max-width: 300px;   
+  width: 100%;         
+  height: auto;       
+  border-radius: 4px;  
+}
+
+
+figure img[alt="Nachkriegs-Modekollektiv der Marke Tonak"] + figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  color: #666;
+  margin-top: 0.5em;
+}
+
+figcaption {
+  color: rgb(84, 94, 84);
+}
+
+.page-header h2 {
+      font-size: 1.0rem;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+.page-header h3 {
+      font-size: 1.0rem;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+ 
+    .standortbild{
+       display: block;
+  margin: 0 auto;           /* Bild selbst horizontal mittig */
+  max-width: 50%;
+  height: auto;
+    }
+

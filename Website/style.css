@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #fffffd;
+  color: #333;
+}
+ 
+.titel {
+  background: rgb(0, 0, 0);
+  color: #fffffd;
+  padding: 1rem;
+  text-align: center;
+ font-family:   New Century Schoolbook, TeX Gyre Schola;
+ justify-content: space-between;
+}
+ 
+
+ 
+.menu-icon {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+ 
+.menu-icon span {
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2px;
+}
+ 
+.obereleiste {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* oder: flex-start, wenn linksbündig */
+  padding: 10px 20px;
+  gap: 20px; /* Abstand zwischen den Elementen */
+}
+ 
+.obereleistet, .suchetext {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+ 
+.nav-text {
+  display: flex;
+  gap: 15px; /* Abstand zwischen den Texten */
+}
+ 
+.nav-text p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+ 
+.heart-icon {
+  font-size: 1.5em;
+}
+ 
+.hintergrundbilder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  gap: 20px;
+}
+ 
+.hintergrundbilder img {
+  width: 95%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+ 
+ 
+.kleiderkategoriet {
+  font-family: New Century Schoolbook, TeX Gyre Schola;
+  color: black;
+  padding: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+ 
+ 
+.bildbikini,.bildunterteil, .bildtasche, .bildkleid, .bildoberteil, .bildprag,
+.bildaccessoires  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  gap: 20px;
+}
+ 
+.bildbikini img, .bildunterteil img, .bildtasche img, .bildkleid img, .bildoberteil img, .bildprag img, .bildaccessoires img  {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+ 
+ 
+.bildtasche, .bildkleid,
+.bildaccessoires  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end; /* schiebt alle Kinder (hier nur dein Link) an den rechten Rand */
+  align-items: center;       /* optional: zentriert vertikal */
+  padding: 0.5rem 1rem;      /* optional: etwas Innenabstand */
+  background-color: #000000;
+  position: relative;      /* damit z-index wirkt */
+  z-index: 1;              
+}
+
+.linklogin {
+  color: red;                /* rote Schrift */
+  text-decoration: none;     /* unterstreicht den Link nicht */
+  font-weight: bold;         /* optional: ein bisschen fetter */
+}
+ 
+.bildtasche img, .bildkleid img, .bildaccessoires img  {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+ 
+.bildkleid img:not(:first-child) {
+  margin-left: -160px; /* Überlappung einstellen */
+}
+ 
+.bildtasche img:not(:first-child) {
+  margin-left: -160px; /* Überlappung einstellen */
+}
+ 
+.bild1 {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: right; /* ← zeigt den rechten Teil des Bildes */
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.bild1 {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  clip-path: inset(0 0 0 12%); /* oben, rechts, unten, links */
+}
+ 
+.bildaccessoires img:not(:first-child) {
+  margin-left: -220px; /* Überlappung einstellen */
+}
+ 
+.bild2 {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: right; /* ← zeigt den rechten Teil des Bildes */
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.bild2 {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  clip-path: inset(0  15%  0 round 20%); /* oben, rechts, unten, links */
+}
+ 
+
+.main-footer {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+ 
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+ 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+ 
+.newsletter-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+.newsletter-form button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-bottom: 30px;
+}
+ 
+.footer-links div {
+  margin: 10px;
+  min-width: 150px;
+}
+ 
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+ 
+.footer-region, .footer-socials, .footer-logo {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+ 
+.logo {
+  width: 300px;         
+  height: auto;
+  margin-top: 10px;
+}
+
+.hintergrundbilder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* optional: setze hier eine feste Höhe, z. B. 60vh */
+}
+
+.hintergrundbilder .background-video {
+  width: 95%;          /* passend zu deinem Bild */
+  height: 60%;         /* oder z.B. 60vh, wenn du willst */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;   /* skaliert und schneidet so, dass das Feld immer ausgefüllt ist */
+}
+
+
+@media (max-width: 775px) {
+ 
+  
+  .bildtasche {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;     
+    padding: 0;
+  }
+
+
+  
+  .bildtasche img.bild1 {
+    display: none;
+  }
+
+ 
+  
+  .bildtasche img:first-chilimg:first-chil {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    clip-path: none; 
+    object-position: center; 
+  }
+}
+
+
+@media (max-width: 775px) {
+  .bildkleid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+
+  .bildkleid img:first-child {
+    display: none;
+  }
+
+
+  .bildkleid img.bild1 {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    clip-path: none;
+    object-position: center;
+  }
+}
+
+@media (max-width: 775px) {
+  .bildaccessoires {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+
+  .bildaccessoires img:first-child {
+    display: none;
+  }
+
+.bildaccessoires img:nth-child(3) {
+    display: none;
+  }
+
+
+  .bildaccessoires img:nth-child(2) {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    clip-path: none;
+    object-position: center;
+  }
+} 
+
+
+
