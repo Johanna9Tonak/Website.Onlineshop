@@ -260,19 +260,31 @@ header {
   margin-top: 10px;
 }
 
+/* 1. Wrapper anpassen */
 .hintergrundbilder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* optional: setze hier eine feste Höhe, z. B. 60vh */
+  /* optional: max-width beschränken wie bei den Bildern */
+  width: 98%;
+  max-width: 1000px;     /* z.B. Bild-Maximalbreite */
+  margin: 20px auto;    /* zentriert mit Abstand oben/unten */
+  position: relative;   /* für den Fall, dass du Aspect-Ratio-Hack nutzen willst */
 }
 
+/* 2. Video responsive machen */
 .hintergrundbilder .background-video {
-  width: 95%;          /* passend zu deinem Bild */
-  height: 60%;         /* oder z.B. 60vh, wenn du willst */
+  display: block;       /* entfernt evtl. Inline-Abstände */
+  width: 100%;          /* füllt die Wrapper-Breite */
+  height: auto;         /* behält das Seitenverhältnis bei */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  object-fit: cover;   /* skaliert und schneidet so, dass das Feld immer ausgefüllt ist */
+  object-fit: cover;    /* schneidet bei Bedarf, damit es immer gefüllt ist */
+}
+
+/* 3. (Optional) Wenn du ein festes 16:9-Format willst, kannst du auch Aspect-Ratio nutzen: */
+.hintergrundbilder {
+  aspect-ratio: 16 / 9; /* Browser legt Höhe automatisch fest */
+}
+.hintergrundbilder .background-video {
+  height: 100%;         /* in Kombination mit width:100% und object-fit:cover */
 }
 
 
